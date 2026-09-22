@@ -1,5 +1,5 @@
 import Image from "next/image";
-import logo from "../assets/logo.svg";
+import logo from "../assets/icons/logo.svg";
 
 const menuNavs = [
     {
@@ -26,7 +26,7 @@ const menuNavs = [
 
 export default function Header() {
     return (
-        <header className="w-full">
+        <header className="w-full relative z-100">
             <div className="h-10 max-w-[1160px] mx-auto mt-[47px] flex justify-between items-center">
                 {/* logo */}
                 <div className="">
@@ -37,7 +37,7 @@ export default function Header() {
                 <nav className="flex items-center gap-10">
                     {menuNavs.map(item => (
                         <a
-                            id={item.id}
+                            key={item.id}
                             className="text-lg text-header font-medium capitalize cursor-pointer
                                     relative
                                     after:absolute
