@@ -57,7 +57,7 @@ export default function Hero() {
 
                 {/* image  */}
                 <div className="relative z-2">
-                    <Image src={heroImage} alt="hero image" />
+                    <Image src={heroImage} alt="hero image" loading="eager" />
                 </div>
             </div>
 

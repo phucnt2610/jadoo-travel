@@ -26,8 +26,8 @@ const menuNavs = [
 
 export default function Header() {
     return (
-        <header className="w-full relative z-100">
-            <div className="h-10 max-w-[1160px] mx-auto mt-[47px] flex justify-between items-center">
+        <header className="sticky top-0 w-full relative z-100 backdrop-blur-xl">
+            <div className="max-w-[1160px] py-5 mx-auto flex justify-between items-center">
                 {/* logo */}
                 <div className="">
                     <Image src={logo} alt="Jadoo logo" loading="eager" />
